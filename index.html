@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050506">
+<meta name="description" content="Aarav Singhada: The Horror Movie. The trailer is coming October 31, 2026.">
+<title>Aarav Singhada: The Horror Movie — Trailer Coming Soon</title>
+<style>
+:root{color-scheme:dark;--bg:#050506;--white:#f4eff0;--muted:#a69b9f;--red:#c51b30;--line:rgba(255,255,255,.14)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--white)}
+body{font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-4;background:radial-gradient(ellipse at 50% 48%,rgba(104,7,22,.28),transparent 48%),linear-gradient(#09080a,#030304 75%,#080607)}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;z-index:5;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");animation:grain .25s steps(2) infinite}
+.vignette{position:fixed;inset:0;z-index:-1;pointer-events:none;box-shadow:inset 0 0 170px 45px #000}
+.fog{position:fixed;z-index:-2;pointer-events:none;width:85vw;height:43vh;left:-15vw;bottom:0;opacity:.12;filter:blur(42px);background:radial-gradient(ellipse,#b8afb3 0%,#484149 28%,transparent 70%);animation:drift 22s ease-in-out infinite alternate}
+.fog.two{left:35vw;bottom:10vh;opacity:.08;animation-duration:30s;animation-direction:alternate-reverse}
+main{min-height:100svh;width:min(900px,100%);margin:auto;padding:26px 24px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.topline{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:clamp(24px,6vh,60px);color:#b6aaad;text-transform:uppercase;letter-spacing:.2em;font-size:.62rem}
+.mark{display:flex;align-items:center;gap:10px}.diamond{height:7px;width:7px;background:#dc263b;transform:rotate(45deg);box-shadow:0 0 14px #c51b30}
+.status{display:flex;align-items:center;gap:8px}.dot{height:6px;width:6px;border-radius:50%;background:#dc263b;box-shadow:0 0 12px #dc263b;animation:pulse 2s infinite}
+.kicker{font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:#b9afb2;margin-bottom:24px;animation:rise 1s .1s both}
+.art{width:min(100%,650px);height:clamp(170px,30vw,270px);position:relative;overflow:hidden;isolation:isolate;margin-bottom:29px;background:radial-gradient(ellipse at 50% 72%,rgba(159,12,32,.28),transparent 40%),linear-gradient(90deg,#070708,#171014 50%,#060607);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 75px #0009;animation:rise 1s .2s both}
+.art:before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 190deg at 50% 50%,transparent,rgba(180,14,32,.07),transparent,rgba(220,220,230,.06),transparent);animation:rotate 32s linear infinite}
+.arch{position:absolute;left:50%;top:10%;transform:translateX(-50%);height:110%;width:27%;border:1px solid rgba(213,195,200,.2);border-bottom:0;border-radius:50% 50% 0 0/25% 25% 0 0;box-shadow:inset 0 0 40px #7b001608,0 0 40px #7b001610}
+.arch:before,.arch:after{content:"";position:absolute;top:8%;bottom:0;width:1px;background:linear-gradient(transparent,#ffffff25,transparent)}.arch:before{left:24%}.arch:after{right:24%}
+.beam{position:absolute;top:0;left:50%;height:100%;width:45%;transform:translateX(-50%);background:linear-gradient(#c9b8bd12,transparent);clip-path:polygon(45% 0,55% 0,100% 100%,0 100%);filter:blur(10px)}
+.art-caption{position:absolute;bottom:12px;left:8px;right:8px;font-size:.52rem;letter-spacing:.34em;text-transform:uppercase;color:#ded0d344}
+h1{font-size:clamp(2.25rem,8.2vw,5.7rem);line-height:.9;letter-spacing:-.055em;font-weight:900;text-transform:uppercase;margin:0;text-shadow:0 4px 35px #000;animation:titlein 1.25s .3s both}
+h1 span{display:block;font-size:.36em;letter-spacing:.32em;font-weight:500;color:#d8ced0;margin-top:19px}
+.tagline{font:italic clamp(1rem,2.4vw,1.25rem)/1.5 Georgia,serif;color:#c5b8bb;margin:25px 0 35px;animation:rise 1s .65s both}
+.rule{width:80px;height:1px;background:linear-gradient(90deg,transparent,#b51b30,transparent);margin:0 auto 28px}
+.coming{font-weight:700;font-size:clamp(1rem,3vw,1.35rem);letter-spacing:.22em;text-transform:uppercase;color:#f1e8ea;margin-bottom:13px;animation:rise 1s .8s both}
+.date{font-size:.74rem;letter-spacing:.35em;text-transform:uppercase;color:#c5293c;margin-bottom:25px}
+.count-label{font-size:.59rem;letter-spacing:.32em;text-transform:uppercase;color:#93888c;margin-bottom:13px}
+.countdown{display:flex;justify-content:center;gap:clamp(8px,2.5vw,17px);margin-bottom:24px}
+.unit{min-width:clamp(57px,12vw,78px);padding:12px 8px 10px;border:1px solid var(--line);background:#ffffff06}
+.num{font-size:clamp(1.6rem,5vw,2.2rem);font-weight:300;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.unit-label{font-size:.53rem;letter-spacing:.18em;color:#8e8387;margin-top:5px}
+.note{min-height:1.4em;color:#a69b9f;font-size:.8rem;margin-bottom:18px}
+.tease{border:1px solid #76202b;background:#13090c;padding:15px 22px;color:#e9cdd1;letter-spacing:.21em;text-transform:uppercase;font-size:.67rem;line-height:1.7;max-width:340px;width:100%;box-shadow:0 0 32px #a10d1c0b}
+footer{padding-top:clamp(28px,5vh,48px);font-size:.56rem;letter-spacing:.23em;text-transform:uppercase;color:#655b5f;line-height:1.8}
+.reveal .coming{color:#ef3349}.reveal .tease{background:#4b0a14;border-color:#e22a40;color:white}
+@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes titlein{from{opacity:0;filter:blur(7px);letter-spacing:.12em}to{opacity:1;filter:blur(0);letter-spacing:-.055em}}
+@keyframes drift{from{transform:translate(-3vw,2vh) scale(1)}to{transform:translate(17vw,-8vh) scale(1.35)}}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(2%,-1%)}50%{transform:translate(-1%,2%)}75%{transform:translate(1%,1%)}100%{transform:translate(-2%,-1%)}}
+@keyframes rotate{to{transform:rotate(360deg)}}
+@media(max-width:480px){main{padding:22px 17px 25px}.topline{font-size:.51rem;letter-spacing:.13em;margin-bottom:32px}.kicker{font-size:.58rem;letter-spacing:.27em}.art{height:170px}.coming{letter-spacing:.13em}.date{letter-spacing:.25em}.unit{padding:11px 5px 9px}.tease{font-size:.61rem;letter-spacing:.15em}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div><div class="fog" aria-hidden="true"></div><div class="fog two" aria-hidden="true"></div>
+<main id="page">
+  <div class="topline"><div class="mark"><span class="diamond"></span><span>Independent Pictures</span></div><div class="status"><span class="dot"></span><span id="status">Something is coming</span></div></div>
+  <div class="kicker">A new nightmare is approaching</div>
+  <div class="art" role="img" aria-label="Abstract dark horror artwork with a shadowy arch and red atmospheric light"><div class="beam"></div><div class="arch"></div><div class="art-caption">Some doors should stay closed</div></div>
+  <h1>Aarav Singhada<span>The Horror Movie</span></h1>
+  <p class="tagline" id="tagline">You have no idea what's coming.</p>
+  <div class="rule"></div>
+  <div class="coming" id="coming">The trailer is coming</div>
+  <div class="date" id="dateText">October 31 · 2026</div>
+  <div class="count-label" id="countLabel">The first look arrives in</div>
+  <div class="countdown" id="countdown" aria-label="Countdown to October 31, 2026">
+    <div class="unit"><div class="num" id="days">00</div><div class="unit-label">Days</div></div>
+    <div class="unit"><div class="num" id="hours">00</div><div class="unit-label">Hours</div></div>
+    <div class="unit"><div class="num" id="minutes">00</div><div class="unit-label">Minutes</div></div>
+    <div class="unit"><div class="num" id="seconds">00</div><div class="unit-label">Seconds</div></div>
+  </div>
+  <div class="note" id="note" aria-live="polite">Until then, don't ask what happens next.</div>
+  <div class="tease" id="tease">This is only the beginning.<br>Stay alert.</div>
+  <footer>AN ORIGINAL HORROR PROJECT<br>THE WAIT ENDS OCTOBER 31</footer>
+</main>
+<script>
+const TRAILER_URL = "https://drive.google.com/file/d/13izxMvXF729ABmLpVIGgPr8A_oF_IiHG/view?usp=drive_link";
+// Midnight at the beginning of October 31, 2026, in each visitor's local timezone.
+const releaseAt = Date.now() + 10000;
+const $ = id => document.getElementById(id);
+let revealed = false;
+function updateCountdown(){
+  const remaining = releaseAt - Date.now();
+  if(remaining <= 0){
+    $("days").textContent = $("hours").textContent = $("minutes").textContent = $("seconds").textContent = "00";
+    if(!revealed){
+      revealed = true;
+      $("page").classList.add("reveal");
+      $("status").textContent = "The signal has arrived";
+      $("tagline").textContent = "The wait is over. The nightmare begins.";
+      $("coming").textContent = "The trailer is here";
+      $("countLabel").textContent = "Now showing";
+      $("note").textContent = "The first look is ready. Are you brave enough?";
+      $("tease").innerHTML = "";
+      const link = document.createElement("a");
+      link.href = TRAILER_URL; link.target = "_blank"; link.rel = "noopener noreferrer";
+      link.textContent = "▶  WATCH THE TRAILER";
+      link.style.cssText = "display:block;color:white;text-decoration:none;padding:2px 0;font-weight:700";
+      $("tease").appendChild(link);
+      $("dateText").textContent = "THE WAIT IS OVER";
+    }
+    return;
+  }
+  $("days").textContent = String(Math.floor(remaining/86400000)).padStart(2,"0");
+  $("hours").textContent = String(Math.floor((remaining%86400000)/3600000)).padStart(2,"0");
+  $("minutes").textContent = String(Math.floor((remaining%3600000)/60000)).padStart(2,"0");
+  $("seconds").textContent = String(Math.floor((remaining%60000)/1000)).padStart(2,"0");
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+</script>
+</body>
+</html>
